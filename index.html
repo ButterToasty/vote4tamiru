@@ -47,25 +47,25 @@ h5{
     <div class="w3-bar w3-black w3-card" id="myNavbar">
       <a href="#home" class="w3-bar-item w3-button w3-wide">VOTE 4 TAMIRU</a>
       <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small w3-hide-medium w3-hide-large">
-        <a href="#about" class="w3-bar-item w3-button "><i class=""></i>ABOUT ME</a>
-        <a href="#campaign" class="w3-bar-item w3-button"><i class=""></i>MY CAMPAIGN</a>
-        <a href="#reasons" class="w3-bar-item w3-button"><i class=""></i>MY VISION</a>
-      </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-  
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
+      <div class="w3-sidebar w3-black w3-bar-block w3-collapse" style="width:200px;right:0" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-hide-large"
+        onclick="w3_close()">Close &times;</button>
+        <a href="#about" onclick="w3_close()"class="w3-bar-item w3-button">About Me</a>
+        <a href="#campaign" onclick="w3_close()"class="w3-bar-item w3-button">About My Campaign</a>
+        <a href="#reasons" onclick="w3_close()"class="w3-bar-item w3-button">Reason For Running</a>
+      </div>
+      
+      <div class="w3-main" style="margin-right:200px">
+        <button class="w3-button w3-xlarge w3-right w3-hide-large" onclick="w3_open()">&#9776;</button>
+        </div>
+      </div> 
+      </div>
       </a>
     </div>
   </div>
   
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#about" class="w3-bar-item w3-button "><i class=""></i>ABOUT ME</a>
-    <a href="#campaign" class="w3-bar-item w3-button"><i class=""></i>MY CAMPAIGN</a>
-    <a href="#reasons" class="w3-bar-item w3-button"><i class=""></i>MY VISION</a>
-  </nav>
+  
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -77,14 +77,20 @@ h5{
   
     <!-- Left Column -->
     <div class="w3-third" style="color:black">
-    <div id="about"></div>
+      
+    
       <div class="w3-card-4">
         <div class="w3-display-container">
+          
           <img src="https://buttertoasty.github.io/vote4tamiru/hiberMe.jpg" style="width:100%" alt="Image Prob Failed 2 Load">
           <div class="w3-display-bottomleft w3-container w3-text-white">
+            
             <h2>Hiber Tamiru</h2>
+            
           </div>
         </div>
+        <div id="about"></div>
+        
         <div class="w3-container">
           <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-amber"></i>Class of 2025 Vice President Candidate</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-amber"></i><a href="mailto:476608@mcpsmd.net">476608@mcpsmd.net</a></p>
@@ -117,6 +123,7 @@ h5{
             <div class="w3-container w3-center w3-round-xlarge w3-amber" style="width:100%; height:15px;"></div>
           </div>
           <br>
+          <div id="campaign"></div>
         </div>
       </div><br>
 
@@ -125,11 +132,13 @@ h5{
 
 
     <!-- Right Column -->
+    
     <div class="w3-twothird">
-    <div id="campaign"></div>
       <div class="w3-container w3-card w3-margin-bottom">
+        
         <h2 class="w3-text-white w3-padding-16"><i class="fa fa-info-circle fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i>About My Campaign</h2>
         <div class="w3-container">
+          
           <h5 class=""><i class="fa fa-certificate w3-margin-right"></i><b>Maintaing Candid Communication</b></h5>
           <h6 class="w3-text-amber"><i class=""></i>Between the student body and SGA class representatives by sending out monthly informational newsletters with the latest class of 2025 updates!</h6>
           <hr>
@@ -151,13 +160,16 @@ h5{
             <p></p>
             <hr>
           </div>
+          <div id="reasons"></div>
           <br>
       </div>
 
-      <div id="reasons"></div>
+      
       <div class="w3-container w3-card">
+        
         <h2 class="w3-text-white w3-padding-16"><i class="fa fa-check-square-o fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i>My Reasons For Running</h2>
         <div class="w3-container">
+          
           <h5 class=""><i class="fa fa-certificate w3-margin-right"></i><b>To Increase Representation</b></h5>
           <h6 class="w3-text-amber"><i class=""></i>Of the student body so that everyone's voices and opinions are heard and reflected!<p></p>
           <hr>
