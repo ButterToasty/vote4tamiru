@@ -43,18 +43,29 @@ h5{
 </head>
 <body>
 
-  <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-padding w3-card w3-hide-large" style="letter-spacing:4px;">
-    <a href="https://www.instagram.com/p/C52EJHdtlGc/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="w3-bar-item w3-button">Vote4Hiber</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About Me</a>
-      <a href="#campaign" class="w3-bar-item w3-button">My Campaign</a>
-      <a href="#reasons" class="w3-bar-item w3-button">My Mission</a>
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">VOTE 4 TAMIRU</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small w3-hide-medium w3-hide-large">
+        <a href="#about" class="w3-bar-item w3-button "><i class=""></i>ABOUT ME</a>
+        <a href="#campaign" class="w3-bar-item w3-button"><i class=""></i>MY CAMPAIGN</a>
+        <a href="#reasons" class="w3-bar-item w3-button"><i class=""></i>MY VISION</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </div>
-</div>
+  
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" class="w3-bar-item w3-button "><i class=""></i>ABOUT ME</a>
+    <a href="#campaign" class="w3-bar-item w3-button"><i class=""></i>MY CAMPAIGN</a>
+    <a href="#reasons" class="w3-bar-item w3-button"><i class=""></i>MY VISION</a>
+  </nav>
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
