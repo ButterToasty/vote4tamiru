@@ -39,31 +39,35 @@ body{
 h5{
   color: white;
 }
+@media (max-width: 20px) {
+    #mySidebar {
+        display: none;
+    }
+}
 </style>
 </head>
 <body>
-
+  
   <div class="w3-top">
     <div class="w3-bar w3-black w3-card" id="myNavbar">
       <a href="#home" class="w3-bar-item w3-button w3-wide">VOTE 4 TAMIRU</a>
       <!-- Right-sided navbar links -->
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-      <div class="w3-sidebar w3-black w3-bar-block w3-collapse" style="width:200px;right:0" id="mySidebar">
-        <button class="w3-bar-item w3-button w3-hide-large w3-hide-medium"
-        onclick="w3_close()">Close &times;</button>
-        <a href="#about" onclick="w3_close()"class="w3-bar-item w3-button">About Me</a>
-        <a href="#campaign" onclick="w3_close()"class="w3-bar-item w3-button">About My Campaign</a>
-        <a href="#reasons" onclick="w3_close()"class="w3-bar-item w3-button">Reason For Running</a>
-      </div>
-      
-      <div class="w3-main" style="margin-right:200px">
-        <button class="w3-button w3-xlarge w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">&#9776;</button>
-        </div>
-      </div> 
-      </div>
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
       </a>
     </div>
+    <nav class="w3-sidebar w3-bar-block w3-black w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <button class="w3-bar-item w3-button" onclick="w3_close()">Close &times;</button>
+      <a href="#about" onclick="w3_close()"class="w3-bar-item w3-button">About Me</a>
+      <a href="#campaign" onclick="w3_close()"class="w3-bar-item w3-button">About My Campaign</a>
+      <a href="#reasons" onclick="w3_close()"class="w3-bar-item w3-button">Reason For Running</a>
+    </nav>
   </div>
+  
+
+
+
   
   
 
@@ -235,5 +239,6 @@ h5{
       mySidebar.style.display = "none";
   }
   </script>
+
 </body>
 </html>
